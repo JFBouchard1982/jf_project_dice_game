@@ -1,0 +1,47 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <image id="flying-cow" src="images/supercowJF3.png" alt="A cow in a superman suit">
+        <div class="container">
+                <h1 class="titleEl"><span class="redletters">D</span>ice-<span class="redletters">P</span>ara-<span class="redletters">D</span>ice</h1>            
+                <h2 id="message">Player 1 Turn</h2>
+            <div class="players">
+                <div id="player1">
+                    <h2 class="score-el">Score: 
+                        <span id="player1Scoreboard">0</span>
+                    </h2>
+                    <img id="player1Dice" class="dice active" src="images/Alea_0.png">
+                    <div class="total-wins-container">
+                        <h2 class="playersWins">Total Wins:
+                            <span id="player1Wins">0</span></h2>
+                    </div>
+                
+                </div>
+                <div id="player2">
+                    <h2 class="score-el">Score: 
+                        <span id="player2Scoreboard">0</span>
+                    </h2>
+                    <img id="player2Dice" class="dice" src="images/Alea_0.png">
+                     <div class="total-wins-container">
+                        <h2 class="playersWins">Total Wins: 
+                             <span id="player2Wins">0</span></h2>
+                    </div>
+                </div>
+            </div>
+                <div class="btn-container">
+                    <button id="rollBtn">Roll Dice 🎲</button>
+                    <button id="resetBtn">Reset Game 🔁</button>  
+                    <button id="resetWinsBtn">Reset Wins 🔁</button>      
+                </div>
+                
+        </div>
+
+            
+        <script src="index.pack.js"></script>
+    </body>
+</html>

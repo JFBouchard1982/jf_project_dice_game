@@ -1,0 +1,115 @@
+html, body { 
+    --color-1: #295a9d;
+    --color-2: #dcedc1; 
+    --color-3: #e60000;
+    --color-4: #ff0000;
+    --color-5: #48cae4;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+.titleEl {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    color: var(--color-1);
+    text-shadow: 3px 3px 2px black;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: var(--color-1);
+    text-shadow: 3px 3px 2px black;
+}
+.playersWins {
+    font-size: 36px;
+    color: var(--color-3);
+    text-shadow: 3px 3px 2px black;
+}
+.redletters {
+    color: var(--color-4);
+}
+body {
+    padding-top: 50px;
+    background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: black;
+}
+
+.container {
+    background-color: skyblue;
+    background-image: url("images/background1.png");
+    background-size: 100%;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 80px;
+    display: block;
+}
+.h2-spacer {
+    margin-right: 5px;
+}
+.btn-container{
+    display: flex;
+}
+button {
+    display: block;
+    color: #fff;
+    padding: 15px 32px;
+    font-size: 18px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resetWinsBtn {
+    background-color: var(--color-5);
+}
+#rollBtn {
+    background-color: var(--color-5);
+}
+#resetBtn {
+    background-color: var(--color-4);
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 15px 10px rgba(0,0,0,0.75);
+}
+#flying-cow {
+    display: none;
+    width: 250px;
+    animation: flying 1s;
+}
+
+@keyframes flying {
+    0% {
+        transform: translateY(150%);
+        }
+      100% {
+        transform: translateX(150%);
+        }
+}
