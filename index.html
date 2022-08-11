@@ -10,12 +10,16 @@
         <div class="container">
                 <h1 class="titleEl"><span class="redletters">D</span>ice-<span class="redletters">P</span>ara-<span class="redletters">D</span>ice</h1>            
                 <h2 id="message">Player 1 Turn</h2>
+                <h3 id="x2-message"></h3>
             <div class="players">
                 <div id="player1">
                     <h2 class="score-el">Score: 
                         <span id="player1Scoreboard">0</span>
                     </h2>
-                    <img id="player1Dice" class="dice active" src="images/Alea_0.png">
+                    <div class="dice-container1">
+                        <img id="player1Dice" class="dice active" src="images/Alea_0.png">
+                   </div>
+
                     <div class="total-wins-container">
                         <h2 class="playersWins">Total Wins:
                             <span id="player1Wins">0</span></h2>
@@ -26,7 +30,10 @@
                     <h2 class="score-el">Score: 
                         <span id="player2Scoreboard">0</span>
                     </h2>
-                    <img id="player2Dice" class="dice" src="images/Alea_0.png">
+                    <div class="dice-container2">
+                        <img id="player2Dice" class="dice" src="images/Alea_0.png">
+                    </div>
+
                      <div class="total-wins-container">
                         <h2 class="playersWins">Total Wins: 
                              <span id="player2Wins">0</span></h2>
@@ -36,12 +43,19 @@
                 <div class="btn-container">
                     <button id="rollBtn">Roll Dice 🎲</button>
                     <button id="resetBtn">Reset Game 🔁</button>  
-                    <button id="resetWinsBtn">Reset Wins 🔁</button>      
+                    <span class="double-or-nothing">
+                        <input type="checkbox" id="doubleOrNothing-box" name="doubleOrNothing-box">
+                        <label for="doubleOrNothing-box">
+                            <span class="double-or-nothing-box-text">X2 or 💀</span> 
+                        </label>
+                    </span>
+
                 </div>
+                    <button id="resetWinsBtn">Reset Wins 🔁</button>   
                 
         </div>
 
             
-        <script src="index.js"></script>
+        <script src="index.pack.js"></script>
     </body>
 </html>

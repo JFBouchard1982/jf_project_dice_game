@@ -10,6 +10,8 @@ html, body {
     font-family: 'Oswald', sans-serif;
 }
 .titleEl {
+    padding: 0;
+    margin: 0;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-weight: 400;
     font-size: 50px;
@@ -17,10 +19,19 @@ html, body {
     text-shadow: 3px 3px 2px black;
 }
 h2 {
-    font-family: 'Oswald', sans-serif;
+    margin-bottom: 15px;
     font-size: 36px;
     color: var(--color-1);
+    font-family: 'Oswald', sans-serif;
     text-shadow: 3px 3px 2px black;
+}
+#x2-message {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color-1);
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 0;
 }
 .playersWins {
     font-size: 36px;
@@ -46,9 +57,14 @@ body {
     text-align: center;
     margin: 0 auto;
     box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
-    padding: 20px;
+    padding: 60px;
 }
-
+.dice-container1 {
+    display: flex;
+    }
+.dice-container2 {
+    display: flex;
+}
 .players {
     display: flex;
     justify-content: space-around;
@@ -71,9 +87,9 @@ body {
 button {
     display: block;
     color: #fff;
-    padding: 15px 32px;
+    padding: 10px 25px;
     font-size: 18px;
-    margin: 15px auto;
+    margin: 10px auto;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -87,7 +103,28 @@ button {
 #resetBtn {
     background-color: var(--color-4);
 }
+.double-or-nothing-box-text {
+    color: var(--color-3);
+    font-weight: 700;
+    font-size: 36px;
+    margin: 10px auto;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 3px 3px 2px black;
+    cursor: pointer;
+}
+.double-or-nothing-box-text:active, .double-or-nothing-box-text:hover {
+    color: #48cae4; 
+}
+input[type=checkbox]{
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5); 
+    margin-top: 1px;
+    opacity: 50%;
 
+}
 button:focus {
     outline: none;
 }
