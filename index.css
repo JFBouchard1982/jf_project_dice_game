@@ -25,13 +25,16 @@ h2 {
     font-family: 'Oswald', sans-serif;
     text-shadow: 3px 3px 2px black;
 }
+.score-el {
+    padding: 10;
+    margin: 0 auto;
+}
 #x2-message {
     font-family: 'Oswald', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
+    font-size: 24px;
     color: var(--color-1);
-    text-shadow: 1px 1px 1px black;
-    margin-bottom: 0;
+    text-shadow: 2px 2px 1px black;
+    margin: 10 auto;
 }
 .playersWins {
     font-size: 36px;
@@ -50,14 +53,25 @@ body {
 }
 
 .container {
-    background-color: skyblue;
-    background-image: url("images/background1.png");
+    /* background-color: skyblue; */
+    background: url("images/background55.png") no-repeat;
     background-size: 100%;
     width: 380px;
     text-align: center;
-    margin: 3px auto 0px auto;
+    margin: 20px auto 0px auto;
     box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
-    padding: 60px;
+    padding: 20px;
+}
+#mutebtn {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    background: url("images/volume20px.png") no-repeat;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 .dice-container1 {
     display: flex;
@@ -106,10 +120,9 @@ button {
 .double-or-nothing-box-text {
     color: var(--color-3);
     font-weight: 700;
-    font-size: 36px;
-    margin: 10px auto;
+    font-size: 20px;
     font-family: 'Oswald', sans-serif;
-    text-shadow: 3px 3px 2px black;
+    text-shadow: 2px 2px 1px black;
     cursor: pointer;
 }
 .double-or-nothing-box-text:active, .double-or-nothing-box-text:hover {
@@ -121,9 +134,7 @@ input[type=checkbox]{
     -webkit-transform: scale(1.5);
     -o-transform: scale(1.5);
     transform: scale(1.5); 
-    margin-top: 1px;
-    opacity: 50%;
-
+    outline: none;
 }
 button:focus {
     outline: none;
@@ -139,14 +150,15 @@ button:focus {
 #flying-cow {
     display: none;
     width: 250px;
-    animation: flying 1s;
+    animation: flying 2.5s;
+    position: absolute;
 }
 
 @keyframes flying {
-    0% {
-        transform: translateY(150%);
-        }
-      100% {
-        transform: translateX(150%);
-        }
+    0%  {
+        transform: translateY(175%);
+}
+    100%{
+        transform: translateX(600%);
+}
 }
